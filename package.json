@@ -54,6 +54,8 @@
     "typescript": "~2.6.1"
   },
   "dependencies": {
+    "dgrid": "^1.2.1",
+    "dojo-dstore": "^1.1.2",
     "tslib": "~1.8.1"
   },
   "optionalDependencies": {
