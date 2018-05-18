@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<div id="root"></div>
+	<!-- <script src="node_modules/@dojo/loader/loader.js"></script> -->
+	<script>
+		var dojoConfig = ({
+			async: true,
+			baseUrl: '..',
+			paths: { 'tslib' : [ './node_modules/tslib/tslib' ] },
+			packages: [
+				{ name: 'interop', location: '_build/src', main: 'dgrid' },
+				{ name: 'dojo', location: 'node_modules/dojo' },
+				{ name: 'dgrid', location: 'node_modules/dgrid' },
+				{ name: '@dojo', location: 'node_modules/@dojo' },
+				{ name: 'dojo-dstore', location: 'node_modules/dojo-dstore' },
+				{ name: 'dstore', location: 'node_modules/dojo-dstore' }
+			]
+		});
+
+	</script>
+
+	<script src="node_modules/dojo/dojo.js"></script>
+
+	<script>
+	require(['interop/dgridTest']);
+	</script>
+</body>
+</html>
